@@ -9,26 +9,17 @@
             font-family: American Typewriter, serif;
             text-align: center;
             padding: 5vw; /* Ajuste relativo al tamaño de la ventana */
+            background: url('gato2.jpg') no-repeat center center fixed; /* Fondo fijo */
+            background-size: cover;
             color: white;
-        }
-        .background-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-        .background-blurred {
-            filter: blur(10px); /* Ajusta la cantidad de desenfoque según lo necesites */
-            width: 100%;
-            height: 100%;
         }
         h1 {
             font-size: 3.5vw; /* Tamaño relativo al tamaño de la ventana */
+            color: white;
         }
         p {
             font-size: 2.1vw; /* Tamaño relativo al tamaño de la ventana */
+            color: white;
             margin: 1.4vh 0; /* Ajuste relativo al tamaño de la ventana */
         }
         .button-container {
@@ -65,16 +56,13 @@
     </style>
 </head>
 <body>
-    <div class="background-container">
-        <img src="gato2.jpg" alt="Background" class="background-blurred">
-    </div>
     <h1>Anthoan</h1>
     <p>Esta es una página con un poco de lo que hago.</p>
     <div class="button-container">
         <button class="button-vet"><a href="vet.html">Vet</a></button>
-        <button class="button-datacience">Data Science</button>
+        <button class="button-datacience">Datacience</button>
         <button class="button-personal">Personal</button>
         <button class="button-mas">Más</button>
     </div>
 </body>
-</html>
+</html> 
