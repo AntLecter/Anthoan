@@ -8,19 +8,30 @@
         body {
             font-family: American Typewriter, serif;
             text-align: center;
-            padding: 50px;
+            padding: 5vw; /* Utilizamos unidades de medida relativas para el padding */
             background: url('ave.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
         }
         h1 {
+            font-size: 4vw; /* Utilizamos unidades de medida relativas para el tamaño de la fuente */
             color: white;
         }
         p {
+            font-size: 2vw; /* Utilizamos unidades de medida relativas para el tamaño de la fuente */
             color: white;
+            margin: 2vh 0; /* Utilizamos unidades de medida relativas para el margen */
         }
         .contact-info {
-            margin-top: 20px;
+            margin-top: 5vh; /* Utilizamos unidades de medida relativas para el margen superior */
+        }
+        .map-container {
+            margin-top: 5vh; /* Utilizamos unidades de medida relativas para el margen superior */
+        }
+        iframe {
+            width: 90vw; /* Utilizamos unidades de medida relativas para el ancho */
+            height: 50vh; /* Utilizamos unidades de medida relativas para la altura */
+            margin: 0 auto; /* Centramos el iframe horizontalmente */
         }
     </style>
 </head>
@@ -28,12 +39,12 @@
     <h1>MVZ, UNAM FMVZ</h1>
     <p>Enfocado en la atención de animales no convencionales, oftalmología y clínica de pequeña especies.</p>
     <div class="contact-info">
-        <p>Dirección:https://maps.app.goo.gl/LGok7d9bjMiY5S3m6 </p>
+        <p>Dirección: <a href="https://maps.app.goo.gl/LGok7d9bjMiY5S3m6">https://maps.app.goo.gl/LGok7d9bjMiY5S3m6</a></p>
         <p>¡Síguenos en Instagram! <a href="https://www.instagram.com/angeles.medivet/">@angeles.medivet</a></p>
-        <p>Contáctanos por WhatsApp: <a href="https://wa.me/5215561515068 ">5561515068</a></p>
+        <p>Contáctanos por WhatsApp: <a href="https://wa.me/5215561515068">5561515068</a></p>
     </div>
     <div class="map-container">
-        <iframe src="https://maps.app.goo.gl/CEmYdAtGYADiH8a36" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://maps.app.goo.gl/CEmYdAtGYADiH8a36" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 </body>
 </html>
