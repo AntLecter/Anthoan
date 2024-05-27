@@ -6,32 +6,37 @@
     <title>Mi Página Web</title>
     <style>
         body {
-            font-family: American Typewriter, serif;
+            font-family: Arial, sans-serif; /* Cambio de la fuente a una más común */
             text-align: center;
-            padding: 5vw; /* Ajuste relativo al tamaño de la ventana */
+            padding: 5vw;
             background: url('gato2.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
         }
         h1 {
-            font-size: 3.5vw; /* Tamaño relativo al tamaño de la ventana */
+            font-size: 4vw;
             color: white;
+            margin-bottom: 2vh; /* Añadido margen inferior para separar el título del párrafo */
         }
         p {
-            font-size: 2.1vw; /* Tamaño relativo al tamaño de la ventana */
+            font-size: 2.5vw;
             color: white;
-            margin: 1.4vh 0; /* Ajuste relativo al tamaño de la ventana */
+            margin-bottom: 2vh; /* Añadido margen inferior para separar los párrafos */
         }
         .button-container {
-            margin-top: 4.5vh; /* Ajuste relativo al tamaño de la ventana */
+            margin-top: 4vh;
         }
         .button-container button {
-            font-size: 2.1vw; /* Tamaño relativo al tamaño de la ventana */
-            padding: 1.4vh 2.8vw; /* Ajuste relativo al tamaño de la ventana */
-            margin: 1.4vh;
+            font-size: 2.2vw;
+            padding: 1.5vh 3vw;
+            margin: 1.5vh 1vw; /* Aumentado el margen horizontal entre los botones */
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s; /* Añadida transición suave para cambiar el color de fondo */
+        }
+        .button-container button:hover {
+            filter: brightness(110%); /* Aumentar el brillo al pasar el ratón sobre el botón */
         }
         .button-vet {
             background-color: #008080;
@@ -58,7 +63,8 @@
         <button class="button-vet"><a href="vet.html" style="text-decoration: none; color: inherit;">Vet</a></button>
         <button class="button-datacience">Datacience</button>
         <button class="button-personal">Personal</button>
-        <button class="button-mas">Mas</button>
+        <button class="button-mas">Más</button> <!-- Corregido el texto del botón "Mas" -->
     </div>
 </body>
 </html>
+
