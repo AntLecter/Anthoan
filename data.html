@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science - Mi Página Web</title>
+    <style>
+        /* Estilos CSS */
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Data Science</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="vet.html">Vet</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="mas.html">Más</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contenido principal -->
+    <main id="main-content">
+        <article id="post-content">
+            <!-- Aquí se cargará dinámicamente el contenido del post -->
+        </article>
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Anthoan</p>
+    </footer>
+
+    <!-- Script para cargar el contenido del archivo post.html -->
+    <script>
+        window.onload = function() {
+            fetch('post.html') // Cambia 'post.html' por la ruta correcta si está en otra carpeta
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('post-content').innerHTML = html;
+                });
+        };
+    </script>
+</body>
+</html>
