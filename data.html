@@ -32,12 +32,27 @@
         main {
             margin: 20px 0;
         }
-        article {
+        .post-button {
+            display: block;
             background: #fff;
+            color: #000;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
+            text-align: left;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .post-button:hover {
+            background: #eaeaea;
+            transform: translateY(-5px);
+        }
+        .post-button h3 {
+            margin: 0 0 10px 0;
+        }
+        .post-button p {
+            margin: 0;
         }
         footer {
             text-align: center;
@@ -64,10 +79,10 @@
     <!-- Contenido principal -->
     <main>
         <h2>Posts de Ciencia de Datos</h2>
-        <article>
-            <h3><a href="post1.html">Título del primer post</a></h3>
+        <a href="post1.html" class="post-button">
+            <h3>Título del primer post</h3>
             <p>Una breve descripción o resumen del primer post...</p>
-        </article>
+        </a>
         <!-- Añadir más artículos aquí para futuros posts -->
     </main>
     
