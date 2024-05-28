@@ -6,47 +6,57 @@
     <title>Data Science - Mi Página Web</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 1rem;
+            background-color: #212529;
+            color: #ffffff;
+            padding: 1rem 0;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
         nav ul li {
             display: inline;
             margin: 0 10px;
         }
         nav ul li a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
+            font-weight: bold;
         }
         main {
-            margin: 20px 0;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         .post-button {
             display: block;
-            background: #fff;
-            color: #000;
+            background-color: #ffffff;
+            color: #333333;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
             text-align: left;
             text-decoration: none;
-            transition: background 0.3s, transform 0.3s;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
         }
         .post-button:hover {
-            background: #eaeaea;
+            background-color: #f8f9fa;
             transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         }
         .post-button h3 {
             margin: 0 0 10px 0;
@@ -57,8 +67,9 @@
         footer {
             text-align: center;
             padding: 1rem;
-            background: #333;
-            color: #fff;
+            background-color: #212529;
+            color: #ffffff;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -79,9 +90,9 @@
     <!-- Contenido principal -->
     <main>
         <h2>Posts de Ciencia de Datos</h2>
-        <a href="post1.html" class="post-button">
-            <h3>Título del primer post</h3>
-            <p>Una breve descripción o resumen del primer post...</p>
+        <a href="post.html" class="post-button">
+            <h3>La ciencia de datos en el desarrollo de estrategias de estudio en el póquer </h3>
+            <p>En este artículo se resume un estudio sobre la generación de estrategias de póquer a partir de redes neuronales.</p>
         </a>
         <!-- Añadir más artículos aquí para futuros posts -->
     </main>
@@ -92,5 +103,6 @@
     </footer>
 </body>
 </html>
+
 
 
