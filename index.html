@@ -53,6 +53,30 @@
         .button-mas {
             background-color: rgba(143, 188, 143, 0.5); /* Color con 50% de transparencia */
         }
+         .search-container {
+            margin-top: 2.1vh; /* Ajuste relativo al tamaño de la ventana */
+        }
+        .search-container input[type="text"] {
+            font-size: 2.1vw; /* Tamaño relativo al tamaño de la ventana */
+            padding: 1.4vh 2.8vw; /* Ajuste relativo al tamaño de la ventana */
+            margin: 1.4vh;
+            border: none;
+            border-radius: 5px;
+            width: 60%;
+        }
+        .search-container input[type="submit"] {
+            font-size: 2.1vw; /* Tamaño relativo al tamaño de la ventana */
+            padding: 1.4vh 2.8vw; /* Ajuste relativo al tamaño de la ventana */
+            margin: 1.4vh;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: rgba(0, 128, 128, 0.5); /* Color con 50% de transparencia */
+            color: white;
+        }
+        .search-container input[type="submit"]:hover {
+            filter: brightness(110%); /* Aumentar el brillo al pasar el ratón sobre el botón */
+        }
           footer {
             text-align: center;
             padding: 1rem;
@@ -74,6 +98,12 @@
         <button class="button-datacience"><a href="data.html">Data Science</a></button>
         <button class="button-personal"><a href="personal.html">Personal</a></button>
         <button class="button-mas">Más</button>
+    </div>
+    <div class="search-container">
+       <form action="/search" method="get">
+           <input type="text" name="q" placeholder="Buscar en el sitio...">
+           <input type="submit" value="Buscar">
+       </form>
     </div>
     <footer>
         <p>&copy; 2024 Anthoan</p>
