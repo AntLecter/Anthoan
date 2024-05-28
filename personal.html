@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            text-align: center;
+            padding: 5vw;
+            background: url('imagenfondo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            margin: 0;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        header nav ul li {
+            margin: 0 20px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            margin-top: 12vh;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .contact-info {
+            margin-top: 2rem;
+        }
+        .contact-info a {
+            color: #00acc1;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .embed-container {
+            margin: 2rem auto;
+            max-width: 90%;
+            height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            margin-top: 2rem;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="vet.html">Vet</a></li>
+                <li><a href="data.html">Data Science</a></li>
+                <li><a href="mas.html">Más</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Sobre Mí</h1>
+        <p>Hola, soy Anthoan. Soy un apasionado de los animales y me especializo en la atención de especies no convencionales. En mi tiempo libre, me gusta compartir contenido en redes sociales y escuchar música.</p>
+        <div class="contact-info">
+            <p>Sígueme en Instagram: <a href="https://www.instagram.com/tu_usuario_ig/">@tu_usuario_ig</a></p>
+            <p>Sígueme en Facebook: <a href="https://www.facebook.com/DwightGaming">@DwightGaming</a></p>
+        </div>
+       
+        <div class="embed-container">
+            <iframe src="https://open.spotify.com/playlist/37i9dQZF1EpvNWqb70SvsU?si=7f0d3c363f7a4f3f" frameborder="0" allow="encrypted-media"></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Anthoan</p>
+    </footer>
+</body>
+</html>
 
