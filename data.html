@@ -62,36 +62,20 @@
     </header>
     
     <!-- Contenido principal -->
-    <main id="main-content">
+    <main>
         <h2>Posts de Ciencia de Datos</h2>
-        <ul>
-            <li><a href="#" onclick="loadPost('post1.html')">Título del primer post</a></li>
-            <!-- Añadir más enlaces a otros posts aquí -->
-        </ul>
-        <article id="post-content">
-            <!-- Aquí se cargará dinámicamente el contenido del post -->
+        <article>
+            <h3><a href="post1.html">Título del primer post</a></h3>
+            <p>Una breve descripción o resumen del primer post...</p>
         </article>
+        <!-- Añadir más artículos aquí para futuros posts -->
     </main>
     
     <!-- Pie de página -->
     <footer>
         <p>&copy; 2024 Anthoan</p>
     </footer>
-
-    <!-- Script para cargar el contenido del archivo HTML del post -->
-    <script>
-        function loadPost(postFile) {
-            fetch(postFile)
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById('post-content').innerHTML = html;
-                })
-                .catch(error => {
-                    console.error('Error al cargar el post:', error);
-                    document.getElementById('post-content').innerHTML = '<p>No se pudo cargar el post.</p>';
-                });
-        }
-    </script>
 </body>
 </html>
+
 
