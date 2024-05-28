@@ -5,7 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Science - Mi Página Web</title>
     <style>
-        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            margin: 20px 0;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -24,6 +63,11 @@
     
     <!-- Contenido principal -->
     <main id="main-content">
+        <h2>Posts de Ciencia de Datos</h2>
+        <ul>
+            <li><a href="#" onclick="loadPost('post1.html')">Título del primer post</a></li>
+            <!-- Añadir más enlaces a otros posts aquí -->
+        </ul>
         <article id="post-content">
             <!-- Aquí se cargará dinámicamente el contenido del post -->
         </article>
@@ -34,15 +78,20 @@
         <p>&copy; 2024 Anthoan</p>
     </footer>
 
-    <!-- Script para cargar el contenido del archivo post.html -->
+    <!-- Script para cargar el contenido del archivo HTML del post -->
     <script>
-        window.onload = function() {
-            fetch('post.html') // Cambia 'post.html' por la ruta correcta si está en otra carpeta
+        function loadPost(postFile) {
+            fetch(postFile)
                 .then(response => response.text())
                 .then(html => {
                     document.getElementById('post-content').innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Error al cargar el post:', error);
+                    document.getElementById('post-content').innerHTML = '<p>No se pudo cargar el post.</p>';
                 });
-        };
+        }
     </script>
 </body>
 </html>
+
